@@ -69,6 +69,8 @@ else()
 	endif()
 endif()
 
+target_compile_options(gsm PRIVATE "-w")
+
 install(TARGETS gsm
 	RUNTIME DESTINATION bin
 	LIBRARY DESTINATION lib
